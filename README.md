@@ -1,6 +1,6 @@
 # YouTube ChatRecipe Extension
 
-A browser extension to ask questions to ChatRecipe Website (currently has Localhost URLs)
+A browser extension to ask questions to ChatRecipe Website (currently has Localhost URL)
 
 ## Installation
 
