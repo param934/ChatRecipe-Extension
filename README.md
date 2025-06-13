@@ -16,8 +16,8 @@ currently has Localhost URL)
 1. Open Chrome/Edge and go to `chrome://extensions/` or `edge://extensions/`
 2. Enable "Developer mode" in the top right corner
 3. Click "Load unpacked" and select the appropriate folder:
-    - Chrome: `dist/chrome/`
-    - Edge: `dist/edge/`
+    - Chrome: `chrome/`
+    - Edge: `edge/`
 4. The extension will appear in your extensions bar
 
 ### Firefox
@@ -25,7 +25,7 @@ currently has Localhost URL)
 1. Open Firefox and go to `about:debugging`
 2. Click "This Firefox" in the sidebar
 3. Click "Load Temporary Add-on"
-4. Select the `manifest.json` file from the `dist/firefox/` folder
+4. Select the `manifest.json` file from the `firefox/` folder
 5. The extension will appear in your extensions bar
 
 ## Building
@@ -34,14 +34,6 @@ To build for all browsers:
 
 ```powershell
 .\build-all.ps1
-```
-
-Or build for specific browsers:
-
-```powershell
-.\build-chrome.ps1    # Chrome
-.\build-firefox.ps1   # Firefox
-.\build-edge.ps1      # Microsoft Edge
 ```
 
 ## Usage
