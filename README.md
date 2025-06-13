@@ -9,6 +9,22 @@ currently has Localhost URL)
 - ✅ Mozilla Firefox (Manifest V2)
 - ✅ Microsoft Edge (Manifest V3)
 
+## Building
+
+To build for all browsers:
+
+```powershell
+.\build-all.ps1
+```
+
+Or build for specific browsers:
+
+```powershell
+.\build-chrome.ps1    # Chrome
+.\build-firefox.ps1   # Firefox
+.\build-edge.ps1      # Microsoft Edge
+```
+
 ## Installation
 
 ### Chrome & Edge
@@ -28,22 +44,6 @@ currently has Localhost URL)
 4. Select the `manifest.json` file from the `firefox/` folder
 5. The extension will appear in your extensions bar
 
-## Building
-
-To build for all browsers:
-
-```powershell
-.\build-all.ps1
-```
-
-Or build for specific browsers:
-
-```powershell
-.\build-chrome.ps1    # Chrome
-.\build-firefox.ps1   # Firefox
-.\build-edge.ps1      # Microsoft Edge
-```
-
 ## Usage
 
 1. Navigate to any YouTube video page (e.g., `https://www.youtube.com/watch?v=id`)
@@ -58,14 +58,3 @@ The extension uses a compatibility layer to work across different browsers:
 - Chrome/Edge: Uses `chrome` API (Manifest V3)
 - Firefox: Uses `browser` API (Manifest V2)
 
-## Files
-
-- `manifest-chrome.json` - Chrome extension configuration (Manifest V3)
-- `manifest-firefox.json` - Firefox extension configuration (Manifest V2)
-- `manifest-edge.json` - Edge extension configuration (Manifest V3)
-- `popup.html` - Popup window HTML
-- `popup.js` - Cross-browser popup functionality
-- `content.js` - Content script for YouTube pages
-- `popup.css` - Styling for popup
-- `ChatRecipe Logo.png` - Extension icon
-- `build-*.ps1` - Build scripts for different browsers
