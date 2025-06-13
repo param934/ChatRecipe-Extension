@@ -36,6 +36,14 @@ To build for all browsers:
 .\build-all.ps1
 ```
 
+Or build for specific browsers:
+
+```powershell
+.\build-chrome.ps1    # Chrome
+.\build-firefox.ps1   # Firefox
+.\build-edge.ps1      # Microsoft Edge
+```
+
 ## Usage
 
 1. Navigate to any YouTube video page (e.g., `https://www.youtube.com/watch?v=id`)
@@ -52,7 +60,7 @@ The extension uses a compatibility layer to work across different browsers:
 
 ## Files
 
-- `manifest.json` - Chrome extension configuration (Manifest V3)
+- `manifest-chrome.json` - Chrome extension configuration (Manifest V3)
 - `manifest-firefox.json` - Firefox extension configuration (Manifest V2)
 - `manifest-edge.json` - Edge extension configuration (Manifest V3)
 - `popup.html` - Popup window HTML

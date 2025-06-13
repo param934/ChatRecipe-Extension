@@ -1,7 +1,4 @@
 dist
-chrome
-edge
-firefox
 node_modules
 package.json
 package-lock.json
@@ -11,4 +8,5 @@ build-exclude.txt
 .gitignore
 manifest-firefox.json
 manifest-edge.json
+manifest-chrome.json
 build-*.ps1
