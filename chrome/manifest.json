@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "ChatRecipe Extension",
+  "version": "1.0",
+  "description": "YouTube extension that adds ChatRecipe integration",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ChatRecipe for YouTube"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "ChatRecipe Logo.png",
+    "32": "ChatRecipe Logo.png",
+    "48": "ChatRecipe Logo.png",
+    "128": "ChatRecipe Logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "ChatRecipe Logo.png"
+      ],
+      "matches": [
+        "https://www.youtube.com/*"
+      ]
+    }
+  ]
+}

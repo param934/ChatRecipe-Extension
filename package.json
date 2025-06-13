@@ -1,0 +1,15 @@
+{
+  "name": "chatrecipe-extension",
+  "version": "1.0.0",
+  "description": "Multi-browser extension for ChatRecipe integration with YouTube",
+  "scripts": {
+    "build:chrome": "if not exist dist\\chrome mkdir dist\\chrome && xcopy /E /Y /I * dist\\chrome\\ /EXCLUDE:build-exclude.txt",
+    "build:firefox": "if not exist dist\\firefox mkdir dist\\firefox && xcopy /E /Y /I * dist\\firefox\\ /EXCLUDE:build-exclude.txt && copy manifest-firefox.json dist\\firefox\\manifest.json",
+    "build:edge": "if not exist dist\\edge mkdir dist\\edge && xcopy /E /Y /I * dist\\edge\\ /EXCLUDE:build-exclude.txt",
+    "build:all": "npm run build:chrome && npm run build:firefox && npm run build:edge",
+    "clean": "if exist dist rmdir /S /Q dist"
+  },
+  "devDependencies": {},
+  "author": "ChatRecipe Team",
+  "license": "MIT"
+}

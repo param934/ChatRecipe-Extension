@@ -1,0 +1,14 @@
+dist
+chrome
+edge
+firefox
+node_modules
+package.json
+package-lock.json
+README.md
+build-exclude.txt
+.git
+.gitignore
+manifest-firefox.json
+manifest-edge.json
+build-*.ps1
