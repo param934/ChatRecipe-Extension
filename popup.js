@@ -1,9 +1,12 @@
+// Browser compatibility layer
+const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
 document.addEventListener('DOMContentLoaded', function () {
     const askButton = document.getElementById('askButton');
 
     askButton.addEventListener('click', function () {
         // Get the current active tab
-        chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+        browserAPI.tabs.query({active: true, currentWindow: true}, function (tabs) {
             const currentUrl = tabs[0].url;
 
             // Check if we're on YouTube
@@ -15,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const redirectUrl = `http://localhost:3000/${encodedUrl}`;
 
                 // Open the redirect URL in a new tab
-                chrome.tabs.create({url: redirectUrl});
+                browserAPI.tabs.create({url: redirectUrl});
 
                 // Close the popup
                 window.close();
