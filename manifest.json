@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube ChatRecipe",
+  "name": "ChatRecipe Extension",
   "version": "1.0",
   "description": "YouTube extension that adds ChatRecipe integration",
   "permissions": [
